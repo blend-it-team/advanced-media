@@ -1,0 +1,38 @@
+<?php
+
+/**
+ * @file
+ * Primary module hooks for DDECK Plyr module.
+ */
+
+/**
+ * @return array[]
+ */
+function advanced_media_theme(): array
+{
+  return [
+    'advanced_media_file_audio' => [
+      'variables' => [
+        'attributes' => NULL,
+        'files' => [],
+        'plyr_settings' => [],
+      ]
+    ],
+    'advanced_media_file_video' => [
+      'variables' => [
+        'attributes' => NULL,
+        'files' => [],
+        'plyr_settings' => [],
+      ]
+    ],
+    'advanced_media_file_remote_video' => [
+      'variables' => [
+        'attributes' => NULL,
+        'files' => [],
+        'video_provider' => NULL,
+        'video_embed_id' => NULL,
+        'plyr_settings' => [],
+      ]
+    ]
+  ];
+}

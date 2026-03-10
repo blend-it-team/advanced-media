@@ -1,0 +1,5 @@
+name: 'DDECK Plyr'
+type: module
+description: 'Add Plyr player field formatter'
+package: ddeck
+core_version_requirement: ^10 || ^11

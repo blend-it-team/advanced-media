@@ -1,0 +1,9 @@
+{% embed 'advanced_media:plyr' %}
+  {% block media %}
+    <audio{{ attributes }} data-plyr-config='{{ plyr_settings|json_encode|raw }}'>
+      {% for file in files %}
+        <source {{ file.source_attributes }} />
+      {% endfor %}
+    </audio>
+  {% endblock %}
+{% endembed %}

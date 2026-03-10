@@ -1,0 +1,6 @@
+{% embed 'advanced_media:plyr' %}
+  {% block media %}
+    <div{{ attributes }} data-plyr-provider="{{ video_provider }}" data-plyr-embed-id="{{ video_embed_id }}"
+                         data-plyr-config='{{ plyr_settings|json_encode|raw }}'></div>
+  {% endblock %}
+{% endembed %}

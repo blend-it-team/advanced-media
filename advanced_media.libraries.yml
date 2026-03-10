@@ -1,0 +1,6 @@
+plyr-player:
+  js:
+    /libraries/plyr/dist/plyr.js: {}
+  css:
+    theme:
+      /libraries/plyr/dist/plyr.css: {}

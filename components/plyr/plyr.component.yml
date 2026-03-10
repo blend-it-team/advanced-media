@@ -1,0 +1,15 @@
+'$schema': 'https://git.drupalcode.org/project/drupal/-/raw/10.1.x/core/modules/sdc/src/metadata.schema.json'
+name: plyr
+status: stable
+slots:
+  media:
+    type: string
+    description: Media slot for the player.
+props:
+  type: object
+  properties:
+    settings:
+      type: string
+      title: settings
+      # @todo Add examples here.
+      examples: []

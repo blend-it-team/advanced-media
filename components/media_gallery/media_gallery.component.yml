@@ -1,0 +1,14 @@
+'$schema': 'https://git.drupalcode.org/project/drupal/-/raw/10.1.x/core/modules/sdc/src/metadata.schema.json'
+name: media-gallery
+status: stable
+props:
+  type: object
+  properties:
+    settings:
+      type: string
+      title: Settings
+      # @todo Add examples here.
+      examples: []
+slots:
+  media:
+    title: media

@@ -4,3 +4,20 @@ plyr-player:
   css:
     theme:
       /libraries/plyr/dist/plyr.css: {}
+
+photoswipe:
+  js:
+    /libraries/photoswipe/dist/umd/photoswipe.umd.min.js:
+      type: external
+      minified: true
+    /libraries/photoswipe/dist/umd/photoswipe-lightbox.umd.min.js:
+      type: external
+      minified: true
+  css:
+    theme:
+      /libraries/photoswipe/dist/photoswipe.css:
+        type: external
+  dependencies:
+    - core/drupal
+    - core/drupalSettings
+    - core/once

@@ -2,11 +2,11 @@
 
 /**
  * @file
- * Primary module hooks for DDECK Plyr module.
+ * Primary module hooks for DDECK Plyr & Advanced Media module.
  */
 
 /**
- * @return array[]
+ * Implements hook_theme().
  */
 function advanced_media_theme(): array
 {
@@ -16,14 +16,14 @@ function advanced_media_theme(): array
         'attributes' => NULL,
         'files' => [],
         'plyr_settings' => [],
-      ]
+      ],
     ],
     'advanced_media_file_video' => [
       'variables' => [
         'attributes' => NULL,
         'files' => [],
         'plyr_settings' => [],
-      ]
+      ],
     ],
     'advanced_media_file_remote_video' => [
       'variables' => [
@@ -32,7 +32,13 @@ function advanced_media_theme(): array
         'video_provider' => NULL,
         'video_embed_id' => NULL,
         'plyr_settings' => [],
-      ]
-    ]
+      ],
+    ],
+    'photoswipe_media_gallery' => [
+      'variables' => [
+        'attributes' => NULL,
+        'files' => [],
+      ],
+    ],
   ];
 }

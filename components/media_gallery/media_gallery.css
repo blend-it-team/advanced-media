@@ -1,0 +1,21 @@
+[data-component-id="test_radix:media_gallery"] {
+  /* @todo Add your styles here. */
+}
+
+.advanced-media-gallery {
+  display: flex;
+  gap: 12px;
+  align-items: start;
+}
+
+.advanced-media-gallery a {
+  display: inline-flex;
+  overflow: hidden;
+}
+
+.advanced-media-gallery img {
+  display: block;
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

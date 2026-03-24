@@ -1,0 +1,17 @@
+{% embed 'advanced_media:media_gallery' %}
+  {% block media %}
+      {# PhotoSwipe expects the gallery container to match `.advanced-media-gallery` #}
+        {# The formatter can pass either an associative array (url/width/height/alt) or a structure with `values`. #}
+        {% if files.url is defined and files.url %}
+          <a href="{{ files.url }}" data-pswp-width="{{ files.width }}" data-pswp-height="{{ files.height }}" target="_blank">
+            <img src="{{ files.thumb_url|default(files.url) }}" alt="{{ files.alt|default('') }}" />
+          </a>
+        {% elseif files.values is defined and files.values %}
+          {% for file in files.values %}
+            <a href="{{ file.url }}" data-pswp-width="{{ file.width }}" data-pswp-height="{{ file.height }}" target="_blank">
+              <img src="{{ file.thumb_url|default(file.url) }}" alt="{{ file.alt|default('') }}" />
+            </a>
+          {% endfor %}
+        {% endif %}
+  {% endblock %}
+{% endembed %}

@@ -2,10 +2,7 @@
 
 namespace Drupal\advanced_media\Plugin\media\Source;
 
-use Drupal\Core\Cache\Cache;
-use Drupal\Core\GeneratedUrl;
 use Drupal\Core\StringTranslation\TranslatableMarkup;
-use Drupal\file\FileInterface;
 use Drupal\media\Attribute\MediaSource;
 use Drupal\media\MediaInterface;
 use Drupal\media\MediaTypeInterface;
@@ -56,21 +53,6 @@ class ImageGallery extends MediaSourceBase {
       default:
         return parent::getMetadata($media, $attribute_name);
     }
-  }
-
-  /**
-   * Gets the thumbnail image URI based on a file entity.
-   *
-   * @param \Drupal\file\FileInterface $file
-   *   A file entity.
-   *
-   * @return string
-   *   File URI of the thumbnail image or NULL if there is no specific icon.
-   */
-  protected function getThumbnail(FileInterface $file) {
-    $icon_base = $this->configFactory->get('media.settings')->get('icon_base_uri');
-
-    return NULL;
   }
 
   /**
